@@ -13,9 +13,9 @@
         <?php
         $params = $_GET;
             if((strlen($params['name']) > 3) && (strpos($params['mail'], '@')) && (strpos($params['mail'], '.')) &&(is_numeric($params['age']))){
-                echo $check = 'accesso riuscito';
+                echo $check = 'Accesso riuscito';
             } else{
-                echo $check = 'accesso negato';
+                echo $check = 'Accesso negato';
             }
         ?>
     </p>
