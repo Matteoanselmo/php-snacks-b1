@@ -38,7 +38,8 @@
         <?php
             echo count($db['teachers']);
             for($i = 0; $i < count($db['teachers']); $i++){
-                var_dump($db['teachers'][$i]);
+                echo '<p>' . 'NOME: ' . $db['teachers'][$i]['name'] . '</p>';
+                echo '<p>' . 'COGNOME: ' . $db['teachers'][$i]['lastname'] . '</p>';
             }
         ?>
     </div>
@@ -46,7 +47,8 @@
         <?php
             echo count($db['pm']);
             for($i = 0; $i < count($db['pm']); $i++){
-                var_dump($db['teachers'][$i]);
+                echo '<p>' . 'NOME: ' . $db['pm'][$i]['name'] . '</p>';
+                echo '<p>' . 'COGNOME: ' . $db['pm'][$i]['lastname'] . '</p>';
             }
         ?>
     </div>
