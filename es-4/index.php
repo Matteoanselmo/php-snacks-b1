@@ -1,10 +1,14 @@
 <?php   
     $array = [];
     for($i = 0; $i < 15; $i++){
-        $randomNum = rand(0 , 100);
-        if(!in_array($randomNum, $array)){
-            $array [] = $randomNum;
-        } 
+        $check = false;
+        while(!$check){
+            $randomNum = rand(0, 100);
+            if(!in_array($randomNum, $array)){
+                $check = true;
+            } 
+        }
+        $array [] = $randomNum;
     }
 ?>
 <!DOCTYPE html>
