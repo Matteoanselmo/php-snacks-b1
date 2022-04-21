@@ -3,7 +3,7 @@
     for($i = 0; $i < 15; $i++){
         $check = false;
         while(!$check){
-            $randomNum = rand(0, 15);
+            $randomNum = rand(0, 150);
             if(!in_array($randomNum, $array)){
                 $check = true;
             } 
