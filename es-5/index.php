@@ -1,5 +1,7 @@
 <?php
     $paragraph = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero qui eaque consequuntur tempore similique velit earum ab ex, quae iste necessitatibus, dignissimos dolorem voluptate? Eaque nulla molestias quia harum reprehenderit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero qui eaque consequuntur tempore similique velit earum ab ex, quae iste necessitatibus, dignissimos dolorem voluptate? Eaque nulla molestias quia harum reprehenderit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero qui eaque consequuntur tempore similique velit earum ab ex, quae iste necessitatibus, dignissimos dolorem voluptate? Eaque nulla molestias quia harum reprehenderit!';
+    $paragraphs = explode('.' , $paragraph);
+
 ?>
 
 
@@ -14,8 +16,10 @@
     <title>Snack 5</title>
 </head>
 <body>
-    <?php
-        var_dump(explode('.' , $paragraph));
-    ?>
+        <?php for($i = 0; $i < count($paragraphs); $i++){ ?>
+            <p>
+                <?php echo $paragraphs[$i]; ?>
+            </p>
+        <?php }?>
 </body>
 </html>
